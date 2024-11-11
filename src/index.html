@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROSKA</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body class="text-white">
+    <header class = "flex fixed w-full h-24 leading-loose justify-between bg-header-color ps-[10vw] pe-[10vw] z-50">
+        <nav id="header" class="flex mx-auto my-5">
+            <div class="image">
+                <img src="../media/Logo-froska.png" alt="Froska_Logo">
+            </div>
+
+            <div id="myNavMenu" class="nav-menu">
+                <ul class = "max-[900px]:flex-col flex text-center uppercase">
+                    <li class="nav_list"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav_list"><a href="#how_it_works" class="nav-link">How It Works</a></li>
+                    <li class="nav_list"><a href="#games" class="nav-link">Games</a></li>
+                    <li class="nav_list"><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+                    <li class="nav_list"><a href="#community" class="nav-link">Community</a></li>
+                    <li class="nav_list"><a href="#buy_tokens" class="nav-link">Buy Tokens</a></li>
+                    <li class="nav_list"><a href="#contacts" class="nav-link">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="max-[900px]:hidden flex-initial w-44 ml-7 box-border">
+                <button class = "btn leading-none"><a href="#">Play Now <i class="fa-solid fa-gamepad"></i></a></button>
+            </div>
+            <div class="max-[900px]:flex max-[900px]:items-center max-[900px]:justify-center hidden">
+                <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-gradient-to-br from-body-color to-purple-900">
+        <section id="home" class="max-[900px]:flex-col max-[900px]:justify-center max-[900px]:h-[100vh] ps-[10vw] pe-[10vw] relative flex flex-col h-full bg-hero-pattern drop-shadow-3xl">
+            <div class="pt-[8.5rem] pb-12">
+                <div class="ps-8 pe-8 py-8">
+                    <p class ="featured-name">The GambleFi Revolution on Metis - Play, Win and Engage with Froska!</p>
+                    <div class="featured-text-info">
+                        <p>Our mission is to revolution crypto with games on Metis</p>
+                    </div>
+                    <div class = "featured-text-btn">
+                        <button class = "btn bg-turqoise-100"><a href="#games">Play Now <i class="fa-solid fa-gamepad"></i></a></button>
+                        <button class = "btn bg-purple-600"><a href="#">Learn More <i class="fa-regular fa-file"></i></a></button>						
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-info max-[900px]:w-full relative flex items-right flex py-[20px] ps-10 pe-10 w-full bg-teal-200 shadow-2xl rounded-xl rounded-bl-none rounded-br-none gap-16">
+                <div>
+                    <h1 class="text-2xl font-semibold mb-2.5 text-deep-purple">About Froska</h1>
+                    <p class="text-[15px] text-deep-purple">Brief overview of Froska’s purpose, meme origins, and GambleFi focus. FROSKA embodies our values—watchfulness, loyalty, and promise. 
+                                Raised in an environment of care, FROSKA signifies our commitment to overseeing and rewarding contributions within our community.</p>
+                </div>
+                <div>
+                    <img src="../media/employee-engagement.png" alt="img-community" class="w-full">
+                </div>
+            </div>
+            <div class="about-info max-[900px]:w-full relative flex items-right flex py-[20px] ps-10 pe-10 w-full bg-purple-300 shadow-2xl rounded-xl rounded-tl-none rounded-tr-none gap-16 mb-6">
+                <div>
+                    <img src="https://www.froska.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-white.95740471.png&w=384&q=75" alt="img-community" class="w-2/3">
+                </div>
+                <div>
+                    <h1 class="text-2xl font-semibold mb-2.5 text-deep-purple">Our Story</h1>
+                    <h3 class="text-xl font-semibold text-feat-text-col mb-[15px]">A New Way to Play</h3>
+                    <p class="text-[15px] text-deep-purple">Froska’s journey from a meme project to a GambleFi platform, including the story of Elena’s pet cat and Froska’s transition to a gaming hub on Metis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how_it_works" class="max-[900px]:flex-col max-[900px]:justify-center max-[900px]:h-[100vh] ps-[10vw] pe-[10vw] relative flex flex-col text-teal-50">
+            <div class="ps-2 pe-2 pt-2 pb-6">
+                <div class="max-[540px]:text-[40px] text-[50px] font-bold my-5">
+                    <h1>Step-by-Step Guide</h1>
+                </div>
+                <div class="about-info max-[900px]:w-full relative flex items-right flex py-[30px] ps-5 pe-5 gap-[25px]">
+                    <div class= "flex gap-4">
+                        <div class="text-7xl">
+                            <i class="fa-solid fa-1"></i>
+                        </div>
+                        <div>
+                            <h3 class = "font-bold">Get Started</h3>
+                            <p class="text-[15px] text-deep-purple">Connect wallet and acquire tokens</p>
+                        </div>
+                    </div>
+                    <div class= "flex gap-4">
+                        <div class="text-7xl">
+                            <i class="fa-solid fa-2"></i>
+                        </div>
+                        <div>
+                            <h3 class = "font-bold">Play Games</h3>
+                            <p class="text-[15px] text-deep-purple">Choose games like “Wheel of Fortune” or “Degen Wheel.”</p>
+                        </div>
+                    </div>
+                    <div class= "flex gap-4">
+                        <div class="text-7xl">
+                            <i class="fa-solid fa-3"></i>
+                        </div>
+                        <div>
+                            <h3 class = "font-bold">Win Rewards</h3>
+                            <p class="text-[15px] text-deep-purple">Earn FROSKA and METIS tokens.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-[900px]:hidden w-full flex text-center ml-7 box-border">
+                    <button class = "btn shadow-md leading-none"><a href="#">See Full Guide</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-2 ps-[10vw] pe-[10vw]" id="games">
+            <div class="featured-name top-header">
+                <h1>Featured Games</h1>
+            </div>
+            <div class="max-[900px]:justify-center py-12 px-6 flex bg-games-pattern justify-between gap-5 flex-wrap rounded-xl shadow-xl">
+                <div class="project-box max-[540px]:w-full max-[900px]:w-4/5 relative flex justify-center items-center flex-col w-[30%] h-64 bg-turqoise rounded-3xl box-shadow-[rgba(17, 12, 46, 0.15) 0px 48px 100px 0px] overflow-hidden group after:content-[''] after:absolute hover:bottom-0 after:-bottom-full hover:bg-[#6e57e0] after:w-full after:h-full after:duration-400 after:z-[1] hover:text-white hover:z-[2]">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="fortunewheel" width="50%" height="50%">
+                        <path id="Layer_2" d="M12,2C9.3218,2,6.811,3.0425,4.9355,4.9307C4.9349,4.9313,4.9343,4.9321,4.9337,4.9327
+                              C4.9335,4.9329,4.9333,4.9329,4.9333,4.9329L4.9326,4.934C3.0414,6.814,2,9.3233,2,12c0,2.6782,1.0425,5.189,2.9307,7.0645
+                              c0.0007,0.0007,0.0014,0.0012,0.0021,0.0019c0.0002,0.0002,0.0002,0.0004,0.0002,0.0004l0.001,0.0007
+                              C6.814,20.9586,9.3233,22,12,22c2.6782,0,5.189-1.0425,7.0645-2.9307c0.0007-0.0007,0.0012-0.0014,0.0019-0.0021
+                              c0.0002-0.0002,0.0004-0.0002,0.0004-0.0002l0.0007-0.001C20.9586,17.186,22,14.6767,22,12c0-2.6772-1.0415-5.187-2.9331-7.0669
+                              C17.187,3.0415,14.6772,2,12,2z M18.3127,16.8987l-3.3515-3.3515c0.1861-0.1836,0.3624-0.3669,0.5177-0.5472h4.4521
+                              C19.754,14.4292,19.1992,15.7662,18.3127,16.8987z M4.0688,13h4.066c0.0453,0.1924,0.0862,0.3865,0.1669,0.5669
+                              c0.0704,0.1628,0.174,0.3026,0.2678,0.4495l-2.8828,2.8828C4.8013,15.7683,4.2461,14.4305,4.0688,13z M5.6873,7.1013l3.0883,3.0883
+                              C8.5747,10.4377,8.4052,10.7058,8.2837,11H4.0689C4.246,9.5709,4.8008,8.2338,5.6873,7.1013z M10.5205,13.2627
+                              c-0.1636-0.1196-0.2964-0.2891-0.3877-0.501c-0.0894-0.1997-0.1226-0.4214-0.0972-0.6665c0.0391-0.4102,0.293-0.7861,0.7402-1.0273
+                              c0.2329-0.1001,0.7124-0.2388,1.3672-0.3281c0.4072-0.0591,0.8184-0.0884,1.1909-0.0884c0.29,0,0.5566,0.0181,0.7788,0.0542
+                              c0.2157,0.0366,0.3466,0.0815,0.4212,0.1152c-0.038,0.1113-0.1318,0.3084-0.3392,0.5865c-0.3027,0.4106-0.77,0.8818-1.3145,1.3252
+                              c-0.2267,0.1836-0.4367,0.333-0.6159,0.448c-0.178,0.114-0.3265,0.1947-0.4325,0.2419l-0.1362,0.0552
+                              C11.3018,13.6025,10.8687,13.5269,10.5205,13.2627z M13.9068,8.6791C13.5955,8.6563,13.2872,8.6465,13,8.6567V4.0688
+                              c1.4305,0.1772,2.7684,0.7324,3.8992,1.6179L13.9068,8.6791z M11,8.9185c-0.188,0.043-0.3657,0.089-0.5285,0.1389L7.1008,5.6868
+                              C8.2316,4.8013,9.5695,4.2461,11,4.0688V8.9185z M10.1152,15.2989C10.3979,15.409,10.6943,15.477,11,15.5048v4.4263
+                              c-1.4292-0.1771-2.7662-0.7319-3.8987-1.6183L10.1152,15.2989z M13,15.0696c0.1308-0.073,0.2673-0.1572,0.4069-0.2486
+                              l3.4922,3.4922c-1.1308,0.8855-2.4686,1.4407-3.8991,1.618V15.0696z M16.5191,11c0.0473-0.3525,0.0251-0.689-0.1109-0.9971
+                              c-0.0959-0.2214-0.247-0.4061-0.423-0.5741l2.328-2.328C19.1987,8.2316,19.7539,9.5695,19.9312,11H16.5191z" fill="#595bd4" class="color000000 svgShape mb-6 group-hover:text-white group-hover:z-[2]"></path>
+                      </svg>
+                    <h3 class="text-xl text-purple-600 font-semibold mb-[15px] group-hover:text-white group-hover:z-[2]">Wheel of Fortune</h3>
+                    <label class="text-base text-purple-800 group-hover:text-white group-hover:z-[2]">Short descriptions</label>
+                    <button class = "btn bg-turqoise-100"><a href="#">Play</a></button>
+                </div>
+                <div class="project-box max-[540px]:w-full max-[900px]:w-4/5 relative flex justify-center items-center flex-col w-[30%] h-64 bg-turqoise rounded-3xl box-shadow-[rgba(17, 12, 46, 0.15) 0px 48px 100px 0px] overflow-hidden group after:content-[''] after:absolute hover:bottom-0 after:-bottom-full hover:bg-[#6e57e0] after:w-full after:h-full after:duration-400 after:z-[1] hover:text-white hover:z-[2]">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="casino" width="50%" height="50%">
+                        <polygon fill="#fff" points="191 400.2 191 461 256 473.4 321 461 321 400.2"></polygon>
+                        <path fill="#fff" d="M256,11C145.54,11,56,100.54,56,211c0,87.71,56.45,162.22,135,189.2c8.11,2.79,16.46,5.07,25,6.8
+                                  h80c8.54-1.73,16.89-4.01,25-6.8c78.55-26.98,135-101.49,135-189.2C456,100.54,366.46,11,256,11z"></path>
+                        <path fill="#9dcafc" d="M226 211c0 7.68 2.93 15.36 8.79 21.21l-35.355 55.5-56.565 36.42C113.9 295.18 96 255.18 96 211l62.333-15.467L226 211zM277.21 232.21l57.39 43.39 34.53 48.53c-19.89 19.9-45.01 34.59-73.13 41.82L256 301l-8.2-29.2L256 241C263.68 241 271.36 238.07 277.21 232.21zM416 211l-65.133 16L286 211c0-7.68-2.93-15.36-8.79-21.21l35.355-64.245L369.14 97.86C398.09 126.82 416 166.82 416 211zM256 51l8.2 59.6L256 181c-7.68 0-15.36 2.93-21.21 8.79L176.6 148.2l-33.74-50.34C171.82 68.91 211.82 51 256 51z"></path>
+                        <path fill="#fff" d="M361 481v20H151v-20c0-11.05 8.95-20 20-20h20 130 20C352.05 461 361 469.95 361 481zM256 241v60l-40 64.95c-28.12-7.23-53.24-21.92-73.13-41.82l91.92-91.92C240.64 238.07 248.32 241 256 241zM286 211h130c0 44.18-17.9 84.18-46.87 113.13l-91.92-91.92C283.07 226.36 286 218.68 286 211zM369.14 97.86l-91.93 91.93c-5.85-5.86-13.53-8.79-21.21-8.79V51C300.18 51 340.18 68.91 369.14 97.86zM142.86 97.86l91.93 91.93c-5.86 5.85-8.79 13.53-8.79 21.21H96C96 166.82 113.91 126.82 142.86 97.86z"></path>
+                        <circle cx="256" cy="211" r="33" fill="#fff"></circle>
+                        <path fill="#fff" d="M296,365.95V407c-12.93,2.62-26.3,4-40,4c-13.7,0-27.07-1.38-40-4v-41.05V341l40-40l40,40V365.95z"></path>
+                        <path fill="#4269a7" d="M466,211C466,95.206,371.794,1,256,1S46,95.206,46,211c0,89.382,56.137,165.886,135,196.144V451
+                                      h-10c-16.542,0-30,13.458-30,30v20c0,5.523,4.477,10,10,10h210c5.523,0,10-4.477,10-10v-20c0-16.542-13.458-30-30-30h-10v-43.856
+                                      C409.863,376.886,466,300.382,466,211z M66,211c0-104.767,85.233-190,190-190s190,85.233,190,190
+                                      c0,87.467-59.414,161.305-140,183.31v-20.796C377.038,351.739,426,286.001,426,211c0-93.657-76.212-170-170-170
+                                      c-93.657,0-170,76.212-170,170c0,75.001,48.962,140.739,120,162.514v20.796C125.414,372.305,66,298.467,66,211z M226,398.623
+                                      v-53.481l30-30l30,30v53.481C266.109,401.792,245.894,401.793,226,398.623z M354.706,98.151l-78.388,78.388
+                                      c-3.26-1.922-6.738-3.333-10.318-4.251V61.341C299.846,63.58,330.658,77.091,354.706,98.151z M405.659,201H294.712
+                                      c-0.918-3.58-2.33-7.058-4.251-10.318l78.388-78.388C389.909,136.342,403.42,167.154,405.659,201z M303.071,333.929L266,296.857
+                                      v-47.146c3.58-0.918,7.058-2.33,10.318-4.251l78.48,78.48c-14.063,12.315-30.534,22.094-48.798,28.524V341
+                                      C306,338.348,304.946,335.804,303.071,333.929z M241.86,225.145c-0.001-0.001-0.002-0.002-0.002-0.003
+                                      c-0.001-0.001-0.002-0.001-0.002-0.002c-7.794-7.798-7.794-20.482,0-28.28c0.001-0.001,0.002-0.002,0.003-0.002
+                                      c0.001-0.001,0.001-0.002,0.002-0.002c7.799-7.795,20.482-7.795,28.28,0c0.001,0.001,0.002,0.002,0.002,0.003
+                                      c0.001,0.001,0.002,0.001,0.002,0.002c7.794,7.798,7.794,20.482,0,28.28c-0.001,0.001-0.002,0.002-0.003,0.002
+                                      c-0.001,0.001-0.001,0.002-0.002,0.002C262.342,232.939,249.657,232.939,241.86,225.145z M368.936,309.794l-78.476-78.476
+                                      c1.922-3.26,3.333-6.738,4.251-10.318h110.954C403.445,254.555,390.13,285.539,368.936,309.794z M246,172.288
+                                      c-3.58,0.918-7.058,2.33-10.318,4.251l-78.388-78.388c24.048-21.061,54.86-34.571,88.706-36.81V172.288z M143.151,112.294
+                                      l78.388,78.388c-1.921,3.26-3.333,6.738-4.251,10.318H106.341C108.58,167.154,122.091,136.342,143.151,112.294z M217.288,221
+                                      c0.918,3.58,2.33,7.058,4.251,10.318l-78.476,78.476c-21.193-24.254-34.509-55.239-36.73-88.794H217.288z M235.682,245.461
+                                      c3.26,1.922,6.738,3.333,10.318,4.251v47.146l-37.071,37.071C207.054,335.804,206,338.348,206,341v11.465
+                                      c-18.263-6.431-34.734-16.209-48.798-28.524L235.682,245.461z M351,481v10H161v-10c0-5.514,4.486-10,10-10h170
+                                      C346.514,471,351,475.486,351,481z M311,451H201v-37.323c35.714,9.702,73.819,9.829,110,0V451z"></path>
+                      </svg>
+                    <h3 class="text-xl text-purple-800 font-semibold mb-[15px] group-hover:text-white group-hover:z-[2]">Degen Wheel</h3>
+                    <label class="text-base text-purple-800 group-hover:text-white group-hover:z-[2]">Short descriptions</label>
+                    <button class = "btn bg-turqoise-100"><a href="#">Play</a></button>
+                </div>
+                <div class="project-box max-[540px]:w-full max-[900px]:w-4/5 relative flex justify-center items-center flex-col w-[30%] h-[250px] bg-white rounded-3xl box-shadow-[rgba(17, 12, 46, 0.15) 0px 48px 100px 0px] overflow-hidden group after:content-[''] after:absolute hover:bottom-0 after:bottom-0 after:-bottom-full hover:bg-[#6e57e0] after:w-full after:h-full after:duration-400 after:z-[1] hover:text-white hover:z-[2]">
+                    <i class="text-5xl text-[#00B5E7] mb-6 group-hover:text-white group-hover:z-[2] fa-solid fa-award"></i>
+                    <label class="text-base text-purple-800 group-hover:text-white group-hover:z-[2]">More games coming soon</label>
+                </div>
+            </div>
+        </section>
+
+        <section id="buy_tokens" class="py-3 ps-[10vw] pe-[10vw]">
+            <div class="about-info max-[900px]:w-full relative flex items-right flex mt-14 py-[30px] ps-10 pe-10 w-full bg-purple-50 shadow-xl rounded-xl gap-16">
+                <div>
+                    <div>
+                        <h1 class="text-2xl font-semibold mb-2.5 text-teal-800">Buy Froska Tokens</h1>
+                        <p class="text-[15px] text-teal-800">Short paragraph describing the utility of Froska tokens within the platform and the benefits of owning them</p>
+                        <button class = "btn bg-teal-600"><a href="#">Buy Froska Tokens</a></button>
+                    </div>
+                    <div class="py-6 text-teal-800">
+                        <h1 class="text-2xl font-semibold mb-2.5 text-teal-800">Step-by-step Guide</h1>
+                        <ul>
+                            <li>Step 1</li>
+                        </ul>
+                    </div>    
+                </div>
+        </section>
+
+        <section class="py-3 ps-[10vw] pe-[10vw] text-teal-50" id="tokenomics">
+            <div class="max-[540px]:text-[40px] text-[50px] font-bold my-4 top-header">
+                <h1>Tokenomics</h1>
+            </div>
+
+            <div class = "flex ps-6 pe-6 gap-16">
+                <div class="max-[900px]:w-16 max-[900px]:h-20 max-[1024px]:w-80 max-[1024px]:h-80 relative my-1 w-36 h-40">
+                    <img src = "../media/pngegg.png"/>
+                </div>
+
+                <div class="max-[900px]:justify-center flex w-full justify-between">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-dice text-teal-300 pb-5 ps-3 pe-3"></i> <span class="text-lg font-medium">Liquidity</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dice text-teal-300 pb-5 ps-3 pe-3"></i> <span class="text-lg font-medium">Airdrops & Rewards</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dice text-teal-300 pb-5 ps-3 pe-3"></i> <span class="text-lg font-medium">Marketing and Development</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-dice text-teal-300 pb-5 ps-3 pe-3"></i> <span class="text-lg font-medium">Early Contributors, Ecosystem Builders, Metis KOLs, Advisors & FROSKA Ambassadors</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="py-3 ps-[10vw] pe-[10vw]">
+            <div class="max-[540px]:text-[40px] text-[50px] font-bold my-4 top-header">
+                <h1>Community & Partnerships</h1>
+            </div>
+
+            <div class="about-info max-[900px]:w-full relative flex-col py-[30px] px-[70px] w-full bg-gradient-to-br from-purple-600 to-teal-600 shadow-xl rounded-xl">
+                <div class="flex items-center justify-center">
+                    <div>
+                        <img src="../media/cryptocurrency_1563050.png" width="40%">
+                        <p>...Text Snippet</p>
+                    </div>
+                    <div>
+                        <img src="../media/social-media_17364811.png" width="40%">
+                        <p>...Text Snippet</p>
+                    </div>    
+                </div>
+                <div class="pt-3">    
+                    <h1 class="text-2xl text-center font-semibold mt-8 text-white">Partnerships</h1>
+                    <div class="about-info max-[900px]:w-full relative flex items-right py-[30px] w-full">
+                        <img src="https://cdn.prod.website-files.com/6507242ad3e4e6ff563301e4/65e889d62e6b9adeb849b6ed_wagmi.svg" width="70%">
+                        <img src="https://cdn.prod.website-files.com/6507242ad3e4e6ff563301e4/65e1f5353abc6243ce98191d_defi.png" width="70%">
+                        <img src="https://cdn.prod.website-files.com/6507242ad3e4e6ff563301e4/65f8467468752216144b5838_hercules%20logo%20metis.svg" width="70%">
+                    </div>
+                </div>  
+            </div>
+        </section>
+        
+        <section class="py-3 ps-[10vw] pe-[10vw]">
+            <div class="featured-name top-header">
+                <h1>Roadmap</h1>
+            </div>
+            <div class="max-[900px]:justify-center flex w-full justify-between">
+                <ul>
+                    <li>Liquidity</li>
+                    <li>Airdrops & Rewards</li>
+                    <li>Marketing and Development</li>
+                    <li>Early Contributors, Ecosystem Builders, Metis KOLs, Advisors & FROSKA Ambassadors</li>
+                </ul>
+                <div class="project-box max-[540px]:w-full max-[900px]:w-4/5 relative flex justify-center items-center flex-col w-[30%] h-64 bg-turqoise rounded-3xl box-shadow-[rgba(17, 12, 46, 0.15) 0px 48px 100px 0px] overflow-hidden group after:content-[''] after:absolute hover:bottom-0 after:-bottom-full hover:bg-[#6e57e0] after:w-full after:h-full after:duration-400 after:z-[1] hover:text-white hover:z-[2]">
+                    <img src = "../media/Pie Chart.png"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3 ps-[10vw] pe-[10vw] pb-16">
+            <div class="featured-name top-header">
+                <h1>Testimonials</h1>
+            </div>
+            
+            <div class="max-[900px]:flex max-[900px]:flex-col max-[900px]:justify-center max-[900px]:gap-[50px] flex justify-center w-full">
+                <div class="max-[900px]:flex max-[900px]:justify-center max-[900px]:w-full flex w-3/4">
+                    <div class="contact-info max-[900px]:w-full relative flex flex-col text-center justify-center items-center py-5 px-7 w-full h-[315px] bg-purple-50 rounded-lg box-shadow-[1px 8px 10px 2px rgba(0, 0, 0, 0.1)] overflow-hidden">
+                        <h2 class="text-deep-purple text-2xl font-semibold mb-5">Heading (With Name of Person)</h2>
+                        <p class="flex items-center gap-2.5 text-deep-purple my-[5px]">Content of the message</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="flex-col justify-center items-center gap-y-[30px] bg-purple-950 py-8 px-[60px]">
+        <div class="flex">
+            <div class="image h-min">
+                <img src="../media/Logo-froska.png" alt="Froska_Logo">
+            </div>
+            <div class="mt-3">
+                <ul class="flex-col">
+                    <li class="list-none">
+                        <a href="#home" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Contact Info</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#about" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Terms of Service</a>
+                    </li>
+                    <li class="list-none">
+                        <a href="#projects" class="no-underline text-feat-text-col font-semibold ms-5 me-5">Join the Community</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class = "flex gap-36 mt-6">
+            <div class="text-sm mt-2.5">
+                <p>Copyright © <a href="#home" class="no-underline">2024 Froska</a> - All rights reserved
+                </p>
+            </div>
+            <div class="flex gap-[10px]">
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] hover:text-[#6e57e0]"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="flex justify-center items-center w-10 h-10 rounded-3xl shadow-[0px_2px_5px_0px_rgba(0,0,0,0.25)] hover:text-[#6e57e0]"><i class="fa-brands fa-discord"></i></div>
+            </div>
+        </div>
+    </footer>
+    <script src = "https://unpkg.com/scrollreveal"></script>
+	<script src = "index.js"></script>
+</body>
+</html>
