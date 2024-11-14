@@ -12,8 +12,8 @@ module.exports = {
     },
 
       backgroundImage: {
-        'hero-pattern': "url('/src/media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png')",
-        'games-pattern': "url('/src/media/OBSKLD0.jpg')"
+        'hero-pattern': "url('/media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png')",
+        'games-pattern': "url('/media/OBSKLD0.jpg')"
       }
   },
   plugins: [],
