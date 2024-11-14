@@ -557,22 +557,26 @@ video {
 .image {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-  height: 11rem;
-  width: 9rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 @media (max-width: 1024px) {
   .image {
-    height: 20rem;
-    width: 20rem;
+    height: 7rem;
+    width: 7rem;
   }
 }
 
 @media (max-width: 900px) {
   .image {
-    height: 5rem;
-    width: 4rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
+}
+
+.responsive {
+  left: 0px;
 }
 
 .nav-menu {
@@ -663,6 +667,13 @@ video {
   clip-path: polygon(0 0, 100% 0, 100% 148vh, 0 100%);
   height: 150vh;
   z-index: 5;
+}
+
+@media only screen and (max-width: 900px) {
+  #home {
+    clip-path: polygon(0 0, 100% 0, 100% 280vh, 0 100%);
+    height: 290vh;
+  }
 }
 
 .fixed {
@@ -961,7 +972,7 @@ video {
 }
 
 .bg-games-pattern {
-  background-image: url('/media/OBSKLD0.jpg');
+  background-image: url('/src/media/OBSKLD0.jpg');
 }
 
 .bg-gradient-to-br {
@@ -969,7 +980,7 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url('/media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png');
+  background-image: url('/src/media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png');
 }
 
 .from-body-color {
@@ -1275,14 +1286,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -1361,6 +1364,11 @@ video {
 }
 
 @media (max-width: 900px) {
+  .max-\[900px\]\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .max-\[900px\]\:flex {
     display: flex;
   }
