@@ -972,7 +972,7 @@ video {
 }
 
 .bg-games-pattern {
-  background-image: url('/src/media/OBSKLD0.jpg');
+  background-image: url('./media/OBSKLD0.jpg');
 }
 
 .bg-gradient-to-br {
@@ -980,7 +980,7 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url('/src/media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png');
+  background-image: url('./media/purple_dark_blue_turquoise_blue_square_shapes_art_pattern_4k_hd_abstract.png');
 }
 
 .from-body-color {
