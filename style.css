@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Poppins', sans-serif;
+	}
+}
+
+@layer components {
+    .image {
+        @apply w-52
+    }
+
+    .nav-menu {
+        @apply text-white text-lg my-3 ml-20
+    }
+
+    .nav-link {
+        @apply no-underline font-semibold ms-5 me-5
+     }
+
+     .btn {
+        @apply font-medium py-3 px-5 border-0 rounded-3xl cursor-pointer duration-[400ms] 
+        bg-gradient-to-r from-purple-500 to-indigo-900 hover:bg-turqoise hover:text-white 
+     }
+
+     .featured-name {
+        @apply text-[50px] font-bold text-white my-5 ps-[16vw]
+     }
+
+     .featured-text-info {
+        @apply text-sm mb-[30px] text-white
+     }
+
+     @media only screen and (max-width: 1024px){
+        .featured-text{
+            @apply p-0;
+        }
+        .image, .image img{
+            @apply w-[320px] h-[320px];
+        }
+    }
+
+     @media only screen and (max-width: 900px) {
+      .nav-logo {
+        @apply flex w-full justify-between ps-10 pe-10; 
+      }
+        
+      .nav-button{
+          @apply hidden;
+      }
+      .nav-menu.responsive{
+          @apply -left-20 right-auto;
+      }
+      .nav-menu{
+          @apply fixed top-20 -left-[150vw] flex-col justify-center items-center bg-purple-800/50 backdrop-blur-xl w-[100vw] min-h-[450px] h-[90vh] duration-300;
+      }
+      .nav_list {
+        @apply py-6;
+      }
+      .nav_menu_list{
+          @apply flex flex-col items-center
+      }
+      .nav-menu-btn{
+          @apply flex items-center justify-center
+      }
+      .featured-box{
+          @apply flex-col justify-center h-[100vh];
+      }
+      .featured-text{
+          @apply w-full order-2 justify-center content-start min-h-[4vh];
+      }
+      .social_icons{
+          @apply mt-[2em];
+      }
+      .featured-image{
+          @apply order-1 justify-center min-h-[150px] w-full mt-[65px];
+      }
+      .image, .image img{
+          @apply w-[120px] h-60;
+      }
+      .row{
+          @apply flex flex-col justify-center gap-[50px];
+      }
+      .col{
+          @apply flex justify-center w-full;
+      }
+      .about-info, .contact-info{
+          @apply w-full;
+      }
+      .project-container{
+          @apply justify-center;
+      }
+      .project-box{
+          @apply w-full;
+      }
+
+      svg{
+        @apply w-full;
+      }
+  
+  }
+  
+  /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+  
+  @media only screen and (max-width: 540px){
+      .featured-name{
+          @apply text-4xl ps-0;
+      }
+
+      .project-box{
+          @apply w-full;
+      }
+      .form-inputs{
+          @apply flex-col;
+      }
+      .input-field{
+          @apply w-full;
+      }
+  }
+  
+    @media only screen and (max-width: 485px){
+        .nav-logo {
+        @apply mx-[19vw]; 
+        }
+    }
+
+    @media only screen and (max-width: 399px){
+        .nav-logo {
+        @apply mr-[50vw]; 
+        }
+    }
+}
