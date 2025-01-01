@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froska Page</title>
+    <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" type="image/png" href="media/froska.png">
+</head>
+
+<body class="md:py-[1.25rem] ps-[12vw] pe-[12vw] w-full bg-black-900_02">
+    <header>
+		<nav id="header" class="nav-logo flex ml-0 mt-5">
+            <div class="nav-name image flex-initial -mt-[3.2rem]">
+                <img onclick = "location.href ='index.html'" src="media/logo_froska.svg" alt="Froska_Logo">
+            </div>
+
+            <div class="flex w-full ml-7 box-border rounded-[5px] h-[3.00rem]">
+				<div class="ml-[46vw] rounded-[5px] py-6 px-[0.25rem] gap-[0.63rem] mt-[0.50rem] flex items-center bg-[#1B1000]">
+                    <p class="text-[0.88rem] !font-aeoniktrial font-normal !text-white">
+                    3000 Froska</p>
+                    <button class="round fill size-xs bg-[#251A00] btn min-w-[6.88rem] flex flex-row items-center justify-center text-center font-aeoniktrial text-white">
+                    0xxf0...54323</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+	<section id = "win-pop_up" class="pops fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 scale-0 border border-solid border-black rounded-[10px] z-[10] bg-white w-[50vw] h-[50vh] max-w-4/5">
+		<div class="p-3 mb-2 ps-[48vw] pe-[48vw]">
+			<button onclick="restore()">&times;</button>
+		</div>
+		<div>
+			<div class="flex flex-col justify-center items-center">
+				<p class="text-[48px] text-[#11C229]">Payday!</p>
+				<p class="text-[48px] text-[#11C229]">you have won</p>
+			</div>
+			<div class="flex flex-col justify-center items-center mt-4 gap-10">
+				<div class="result py-6 px-3 text-xl text-white bg-[#11C229] rounded-lg"></div>
+				<button onclick="restore()" class="round fill size-sm bg-[#FF0404] btn min-w-[10.00rem] gap-[0.38rem] my-auto flex flex-row items-center justify-center text-center">
+					<img src="media/img_playcirclefilled.svg" alt="Play Circle Filled" class="w-[1.25rem] h-[1.25rem] object-contain">
+					<span class="text-white">Play Again</span>
+				</button>
+			</div>
+		</div>	
+	</section>
+
+	<section id = "try-again_pop" class="pops pop_down fixed top-1/2 left-1/2 -translate-y-2/4 -translate-x-2/4 scale-0 border border-solid border-black rounded-[10px] z-[10] bg-white w-[50vw] h-[50vh] max-w-4/5">
+		<div class="p-3 mb-2 ps-[48vw] pe-[48vw]">
+			<button onclick="restore()">&times;</button>
+		</div>
+		<div>
+			<div class="flex flex-col justify-center items-center">
+				<p class="text-[48px] text-[#FF0404]">The Meme Gods</p>
+				<p class="text-[48px] text-[#FF0404]">Said No</p>
+			</div>
+			<div class="flex flex-col justify-center items-center mt-4 gap-10">
+				<div class="result py-6 text-xl text-white bg-[#11C229] rounded-lg"></div>
+				<button onclick="restore()" class="round fill size-sm bg-[#FF0404] btn min-w-[10.00rem] gap-[0.38rem] my-auto flex flex-row items-center justify-center text-center">
+					<img src="media/img_playcirclefilled.svg" alt="Play Circle Filled" class="w-[1.25rem] h-[1.25rem] object-contain">
+					<span class="text-white">Try Again</span>
+				</button>
+			</div>
+		</div>	
+	</section>
+
+    <main id = "blur" class="py-2">
+		<section class="py-2" id="games">
+			<div class="text-[50px] font-bold text-white my-5 pe-[16vw] top-header">
+				<h1 class="glitchText max-[900px]:text-4xl">Choose Game to Play</h1>
+			</div>
+			<div class="flex flex-row items-center z-[2] md:relative">
+				<div class = "absolute top-[56%] left-[-10%]">
+					<img src="media/Solar-cat.png" alt="Game Image" class="mb-[1.38rem] w-[14%] h-[12.63rem] self-end object-contain md:w-full">
+				</div>
+				
+				<div class="border-zinc-200 rounded-[14px] max-w-[83.75rem] sm:py-[1.00rem] sm:px-[1.25rem] md:p-[1.25rem] lg:py-[2.00rem] lg:px-[1.25rem] lg:mr-0 md:mr-0 py-[4.00rem] px-[3.50rem] gap-[2.00rem] mr-[1.00rem] flex w-full justify-center bg-blaq-grad">
+					<div class="rounded-[10px] px-[1.25rem] gap-[2.13rem] w-[50%] flex flex-col bg-[#A30000] md:w-full">
+						<div class="ml-[1.25rem] mt-[1.25rem] flex items-start md:ml-0 sm:flex-col">
+							<div class="gap-[0.63rem] mt-[0.88rem] flex flex-col items-start self-end sm:self-stretch">
+								<h4 class="lg:text-[1.25rem] size-headinglg heading ui text-[1.50rem] !font-orbitron5 font-bold !text-white-a700">
+								Wheel of fortune</h4>
+								<p class="lg:text-[0.81rem] size-texts text ui text-[1.00rem] font-normal !text-white-a700">
+								Try your luck</p>
+							</div>
+							<div class="w-[44%] h-[3.38rem] relative content-center bottom-[4.00rem] lg:h-auto md:h-auto sm:w-full">
+								<div class="rounded-[5px] w-[32%] h-[3.00rem] ml-auto bg-button-grad">
+								</div>
+								<button onclick="myFunction()" class="round fill size-sm bg-[#FF040499] btn min-w-[10.00rem] right-[0.00rem] gap-[0.38rem] absolute bottom-0 top-0 my-auto flex flex-row items-center justify-center text-center text-white font-bold">
+									<img src="media/img_playcirclefilled.svg" alt="Play Circle Filled" class="w-[1.25rem] h-[1.25rem] object-contain">
+									<span>Play Now</span>
+								</button>
+							</div>
+						</div>
+						<img src="media/img_frame.svg" alt="Frame Image" class="mx-[6.13rem] h-[10.13rem] md:mx-0">
+					</div>
+					<div class="rounded-[10px] px-[1.25rem] gap-[2.13rem] w-[50%] flex flex-col bg-[#A30000] md:w-full">
+						<div class="ml-[1.25rem] mt-[1.25rem] flex items-start md:ml-0 sm:flex-col">
+							<div class="gap-[0.63rem] mt-[0.88rem] flex flex-1 flex-col items-start self-end sm:self-stretch">
+								<h4 class="lg:text-[1.25rem] size-headinglg heading ui text-[1.50rem] !font-orbitron5 font-bold !text-white-a700">Degen Wheel</h4>
+								<p class="lg:text-[0.81rem] size-texts text ui text-[1.00rem] font-normal !text-white-a700">Go Hard or Go Home</p>
+							</div>
+							<div class="w-[44%] h-[3.38rem] relative content-center bottom-[4.00rem] lg:h-auto md:h-auto sm:w-full">
+								<div class="rounded-[5px] w-[32%] h-[3.00rem] ml-auto bg-button-grad">
+								</div>
+								<button onclick="myFunction()" class="round fill size-sm bg-[#FF040499] btn min-w-[10.00rem] right-[0.00rem] gap-[0.38rem] absolute bottom-0 top-0 my-auto flex flex-row items-center justify-center text-center text-white font-bold">
+									<img src="media/img_playcirclefilled.svg" alt="Play Circle Filled" class="w-[1.25rem] h-[1.25rem] object-contain">
+									<span>Play Now</span>
+								</button>
+							</div>
+						</div>
+						<img src="media/bat_frame.svg" alt="Frame Image" class="mx-[6.13rem] h-[10.13rem] md:mx-0">
+						<img src="media/bat_frame_orig.svg" alt="Frame Image" class="absolute mx-[6.13rem] h-[5.13rem] right-[21vw] bottom-[16.5rem] md:mx-0">
+					</div>
+			</div>
+					<img src="media/Angelic Cat.png" alt="Footer Image" class="top-[-8.50rem] right-[-5.00rem] w-[18%] h-[16.75rem] absolute m-auto object-contain">
+			</div>
+		</section>
+
+        <section id= "main-game" class= "invisible">
+			<div class="text-[50px] font-bold text-white my-5 pe-[16vw] top-header">
+				<h1 class="glitchText max-[900px]:text-4xl">Wheel Spin</h1>
+			</div>
+			<div class="flex flex-row items-center z-[2] md:relative">
+				<div class = "absolute top-[69%] left-[-7%]">
+					<img src="media/11.png" alt="Eleven Image" class="mb-[1.38rem] w-[14%] h-[12.63rem] self-end object-contain md:w-full">
+				</div>
+				<div class="rounded-[14px] max-w-[83.75rem] sm:py-[1.00rem] sm:px-[1.25rem] md:p-[1.25rem] lg:py-[2.00rem] lg:px-[1.25rem] lg:mr-0 md:mr-0 py-[4.00rem] px-[3.50rem] gap-[2.00rem] mr-[1.00rem] flex w-full justify-center">
+						<div class="rounded-[10px] px-[1.25rem] gap-[2.13rem] w-[50%] flex flex-col bg-[#A30000] md:w-full">
+							<div class="ml-[1.25rem] mt-[1.25rem] flex items-start md:ml-0 sm:flex-col">
+								<div class="w-[44%] h-[3.38rem] relative content-center lg:h-auto md:h-auto sm:w-full">
+									<div class="rounded-[5px] w-[28%] h-[3.00rem] bg-gradient-to-r from-[#FF0404] to-[#FEFCF7]">
+									</div>
+									<button class="round fill size-sm bg-[#FF040499] btn min-w-[10.00rem] gap-[0.38rem] absolute bottom-0 top-0 my-auto flex flex-row items-center justify-center text-center text-white font-bold">
+										<img src="media/img_playcirclefilled.svg" alt="Play Circle Filled" class="w-[1.25rem] h-[1.25rem] object-contain">
+										<span>Spin Now</span>
+									</button>
+								</div>
+								<div class="my-8 ms-[5vw] container_1">
+									<div class="spinBtn">SPIN</div>
+									<div class="wheel">
+										
+									</div>
+										<img id="spinner" class="shake" src="./media/frame-wheel.png" />
+								</div>
+					
+							</div>
+						</div>
+						<div class="gap-[1.50rem] w-[32%] flex flex-col md:w-full">
+							<div class="border-gray-800 [14px] sm:p-[1.00rem] md:p-[1.25rem] py-[2.75rem] px-[2.63rem] ml-[1.63rem] bg-[#060400] md:ml-0">
+								<div class="rounded-[10px] sm:px-[1.00rem] py-[1.00rem] px-[2.00rem] gap-[0.63rem] flex flex-col items-start bg-[#1B1000]">
+									<p class="lg:text-[0.81rem] size-texts text ui text-[1.00rem] !font-aeoniktrial font-normal !text-blue_gray-100_01">
+									Wallet Ballance</p>
+									<h4 class="lg:text-[1.25rem] size-headinglg heading ui text-[1.50rem] mb-[0.25rem] !font-orbitron5 font-bold !text-gray-50">
+									100.000 froska</h4>
+								</div>
+							</div>
+							<div class="rounded-[14px] sm:p-[1.00rem] md:py-[1.25rem] py-[2.88rem] px-[2.50rem] gap-[1.50rem] ml-[1.63rem] flex flex-col bg-[#060400] md:ml-0">
+								<div class="rounded-[10px] sm:px-[1.00rem] py-[1.00rem] px-[2.00rem] gap-[0.63rem] flex flex-col items-start bg-[#1B1000]">
+									<p class="lg:text-[0.81rem] size-texts text ui text-[1.00rem] !font-aeoniktrial font-normal !text-blue_gray-100_01">
+									Recent Rewards</p>
+									<h4 class="lg:text-[1.25rem] size-headinglg heading ui text-[1.50rem] mb-[0.25rem] !font-orbitron5 font-bold !text-gray-50">
+									900.000 froska</h4>
+								</div>
+								<button class="round fill size-sm bg-gradient-to-r from-[#FF040499] to-[#FF0404] btn ui flex flex-row items-center justify-center self-stretch text-center text-white font-aeoniktrial font-bold">
+								Claim rewards</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
+    </main>
+	<script>
+        let wheel = document.querySelector('.wheel');
+		let spinBtn = document.querySelector('.spinBtn');
+		let resultDisplay = document.querySelector('.result'); // Element to display the result
+		let greenPop = document.querySelector('#win-pop_up');
+		let redPop = document.querySelector('#try-again_pop');
+		var blur = document.getElementById('blur');
+		let value = Math.ceil(Math.random() * 3600);
+		let spinner = document.getElementById('spinner');
+
+		// Define 12 segments with their respective ranges
+		const segments = [
+			{ name: "10 METIS", number: 1, startAngle: 0, endAngle: 26.3, flagStatus: "positive" },
+			{ name: "GO HOME", number: 2, startAngle: 26.4, endAngle: 59.8, flagStatus: "negative" },
+			{ name: "1 METIS", number: 3, startAngle: 59.9, endAngle: 86.4, flagStatus: "positive" },
+			{ name: "20K FROSKA", number: 4, startAngle: 86.5, endAngle: 119.5, flagStatus: "positive" },
+			{ name: "REKT", number: 5, startAngle: 119.6, endAngle: 146.3, flagStatus: "positive" },
+			{ name: "0.5 METIS", number: 6, startAngle: 146.3, endAngle: 179.6, flagStatus: "positive" },
+			{ name: "B", number: 7, startAngle: 179.6, endAngle: 206.6, flagStatus: "positive" },
+			{ name: "500 KA", number: 8, startAngle: 206.6, endAngle: 239.7, flagStatus: "positive" },
+			{ name: "1 FROSKA", number: 9, startAngle: 239.8, endAngle: 266.6, flagStatus: "positive" },
+			{ name: "0", number: 10, startAngle: 266.6, endAngle: 300.3, flagStatus: "negative" },
+			{ name: "5K FROSKA", number: 11, startAngle: 300.3, endAngle: 327.1, flagStatus: "positive" },
+			{ name: "0.002 METIS", number: 12, startAngle: 327.1, endAngle: 360, flagStatus: "positive" },
+		];
+
+		if (wheel && spinBtn && resultDisplay) {
+			let isSpinning = false;
+
+			spinBtn.onclick = function () {
+				if (isSpinning) return; // Prevent multiple clicks during a spin
+				isSpinning = true;
+
+				// Spin the wheel
+				wheel.style.transition = "transform 3s ease-out";
+				wheel.style.transform = "rotate(" + value + "deg)";
+				spinner.style.transition = "transform 3s ease-out";
+				spinner.style.transform = "rotate(" + value + "deg)";
+				first_res = value%360;
+				console.log(value, first_res);
+
+				// Calculate result after spin
+				setTimeout(() => {
+					const actualDegree = value % 360; // Get the final angle within 0-360
+					const result = segments.find(
+						segment =>
+							actualDegree >= segment.startAngle &&
+							actualDegree <= segment.endAngle
+					);
+					console.log(result);
+					console.log(resultDisplay);
+					
+					if(result.flagStatus == "positive"){
+						greenPop.style.transform = "scale(1)";
+						toggle();
+						resultDisplay.textContent = `${result.name}`;
+					}
+
+					else if(result.flagStatus == "negative"){
+						redPop.style.transform = "scale(1)";
+						toggle();
+						resultDisplay.textContent = `${result.name}`;
+					}
+
+					 // Display result
+
+					// Reset wheel
+					wheel.style.transition = "none";
+					wheel.style.transform = "rotate(0deg)";
+					spinner.style.transition = "none";
+					spinner.style.transform = "rotate(-13deg)";
+					value = Math.ceil(Math.random() * 3600); // Reset the spin value
+					setTimeout(() => {
+						wheel.style.transition = "transform 6s ease-out";
+						isSpinning = false;
+					}, 50);
+				}, 6000); // Duration matches the CSS transition duration
+			};
+		}		
+	else {
+        console.error("Wheel or spin button element not found!");
+    }
+		
+		function myFunction() {
+		  const x = document.getElementById('main-game');
+		  x.style.visibility = 'visible';
+		  location.href ='#main-game';
+		  
+		}
+
+		function restore() {
+			const poppin = document.querySelector('.pops');
+			const pop_down1 = document.querySelector('.pop_down');
+
+			poppin.style.transform = "scale(0)";
+			pop_down1.style.transform = "scale(0)";
+			location.href = '#main-game';
+			blur.classList.toggle('active');
+		}
+
+		function toggle() {
+			blur.classList.toggle('active');
+		}
+
+    </script>
+</body>
+</html>
