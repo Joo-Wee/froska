@@ -1,137 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-	html {
-		font-family: 'Poppins', sans-serif;
+  html {
+		font-family: 'Orbitron', serif;
 	}
-}
+	
+	#home {
+		font-family: 'Passero One', serif;
+	}
+	
+	h1, h2, h3, h4 {
+		font-family: 'Passero One', serif;
+	}
 
 @layer components {
+    .ui.button.circle {
+        @apply rounded-[50%];
+      }
+      
+      .ui.button.round {
+        @apply rounded-[5px];
+      }
+      
+      .ui.button.size-xs {
+        @apply h-[2.25rem] px-[0.75rem] text-[0.88rem];
+      }
+      
+      .ui.button.size-lg {
+        @apply h-[3.75rem] px-[1.00rem] text-[0.88rem];
+      }
+      
+      .ui.button.size-md {
+        @apply h-[3.38rem] px-[1.00rem];
+      }
+      
+      .ui.button.size-sm {
+        @apply h-[3.38rem] px-[1.88rem] text-[0.88rem];
+      }
+      
+      .ui.button.fill.gray_900_02 {
+        @apply bg-gray-900 text-white;
+      }
+      
+      .ui.button.gradient.lime_900_03_yellow_200 {
+        @apply shadow-sm text-yellow-100;
+      }
+      
+      .ui.button.fill.red_a700_33 {
+        @apply bg-red-700;
+      }
+
+      .ui.button.fill.red_a700_99 {
+        @apply bg-red-700 backdrop-opacity-[0.5] blur-[10.00px] text-white;
+      }
+      
+      .ui.button {
+        @apply flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap;
+      }
+      
+      /* Text CSS */
+      
+      .ui.text.size-textxs {
+        @apply text-[0.88rem] font-normal;
+      }
+      
+      .ui.text.size-texts {
+        @apply text-[1.00rem] font-normal lg:text-[0.81rem];
+      }
+      
+      .ui.text.size-textmd {
+        @apply text-[1.25rem] font-normal lg:text-[1.06rem];
+      }
+      
+      .ui.text.size-textlg {
+        @apply text-[2.50rem] font-normal lg:text-[2.13rem] md:text-[2.38rem] sm:text-[2.25rem];
+      }
+      
+      .ui.text.size-textxl {
+        @apply text-[4.63rem] font-normal lg:text-[4.63rem] md:text-[3.00rem];
+      }
+      
+      .ui.text {
+        @apply text-white;
+      }
+
+      .ui.heading.size-headingxs {
+        @apply text-[0.88rem] font-bold;
+      }
+      
+      .ui.heading.size-headings {
+        @apply text-[1.06rem] font-black lg:text-[0.88rem];
+      }
+      
+      .ui.heading.size-headingmd {
+        @apply text-[1.25rem] font-bold lg:text-[1.06rem];
+      }
+      
+      .ui.heading.size-headinglg {
+        @apply text-[1.50rem] font-bold lg:text-[1.25rem] md:text-[1.38rem];
+      }
+      
+      .ui.heading.size-headingxl {
+        @apply text-[2.50rem] font-bold lg:text-[2.13rem] md:text-[2.38rem] sm:text-[2.25rem];
+      }
+      
+      .ui.heading {
+        @apply text-white;
+      }
+      
+      /* Container CSS */
+      
+      .container-xs {
+        @apply w-full mx-auto max-w-[83.75rem];
+      }
+	  
+	  .header-img {
+		  @apply w-[7.63rem] h-[3.00rem] object-contain;
+	  }
+
     .image {
-        @apply w-52
-    }
+      @apply w-52
+  }
 
-    .nav-menu {
-        @apply text-white text-lg my-3 ml-20
-    }
+  .nav-menu {
+      @apply text-white text-lg my-3 ml-20
+  }
 
-    .nav-link {
-        @apply no-underline font-semibold ms-5 me-5
-     }
+  .nav-link {
+      @apply no-underline font-semibold ms-5 me-5
+   }
 
-     .btn {
-        @apply font-medium py-3 px-5 border-0 rounded-3xl cursor-pointer duration-[400ms] 
-        bg-gradient-to-r from-purple-500 to-indigo-900 hover:bg-turqoise hover:text-white 
-     }
+   .btn {
+      @apply font-medium py-3 px-5 border-0 rounded-3xl cursor-pointer duration-[400ms] 
+      bg-gradient-to-r from-purple-500 to-indigo-900 hover:bg-turqoise hover:text-white 
+   }
 
-     .featured-name {
-        @apply text-[50px] font-bold text-white my-5 ps-[16vw]
-     }
+   .featured-name {
+      @apply text-[50px] font-bold text-white my-5;
+   }
 
-     .featured-text-info {
-        @apply text-sm mb-[30px] text-white
-     }
+   .last_sm {
+    @apply ms-[0];
+   }
 
-     @media only screen and (max-width: 1024px){
-        .featured-text{
-            @apply p-0;
-        }
-        .image, .image img{
-            @apply w-[320px] h-[320px];
-        }
-    }
+   .featured-text-info {
+      @apply text-sm mb-[30px] text-white
+   }
 
-     @media only screen and (max-width: 900px) {
-      .nav-logo {
-        @apply flex w-full justify-between ps-10 pe-10; 
-      }
-        
-      .nav-button{
-          @apply hidden;
-      }
-      .nav-menu.responsive{
-          @apply -left-20 right-auto;
-      }
-      .nav-menu{
-          @apply fixed top-20 -left-[150vw] flex-col justify-center items-center bg-purple-800/50 backdrop-blur-xl w-[100vw] min-h-[450px] h-[90vh] duration-300;
-      }
-      .nav_list {
-        @apply py-6;
-      }
-      .nav_menu_list{
-          @apply flex flex-col items-center
-      }
-      .nav-menu-btn{
-          @apply flex items-center justify-center
-      }
-      .featured-box{
-          @apply flex-col justify-center h-[100vh];
-      }
+   @media only screen and (max-width: 1024px){
       .featured-text{
-          @apply w-full order-2 justify-center content-start min-h-[4vh];
-      }
-      .social_icons{
-          @apply mt-[2em];
-      }
-      .featured-image{
-          @apply order-1 justify-center min-h-[150px] w-full mt-[65px];
+          @apply p-0;
       }
       .image, .image img{
-          @apply w-[120px] h-60;
+          @apply w-[320px] h-[320px];
       }
-      .row{
-          @apply flex flex-col justify-center gap-[50px];
-      }
-      .col{
-          @apply flex justify-center w-full;
-      }
-      .about-info, .contact-info{
-          @apply w-full;
-      }
-      .project-container{
-          @apply justify-center;
-      }
-      .project-box{
-          @apply w-full;
-      }
+  }
 
-      svg{
+   @media only screen and (max-width: 900px) {
+    .nav-logo {
+      @apply flex w-full justify-between ps-10 pe-10; 
+    }
+      
+    .nav-button{
+        @apply hidden;
+    }
+    .nav-menu.responsive{
+        @apply -left-20 right-auto;
+    }
+    .nav-menu{
+        @apply fixed top-20 -left-[150vw] flex-col justify-center items-center bg-purple-800/50 backdrop-blur-xl w-[100vw] min-h-[450px] h-[90vh] duration-300;
+    }
+    .nav_list {
+      @apply py-6;
+    }
+    .nav_menu_list{
+        @apply flex flex-col items-center
+    }
+    .nav-menu-btn{
+        @apply flex items-center justify-center
+    }
+
+    .top-side {
+      @apply flex flex-col;
+    }
+
+    .featured-box{
+        @apply flex-col justify-center h-[100vh];
+    }
+
+    .featured-text{
+        @apply w-full order-2 justify-center content-start min-h-[4vh];
+    }
+    .social_icons{
+        @apply mt-[2em];
+    }
+    .featured-image{
+        @apply order-1 justify-center min-h-[150px] w-full mt-[65px];
+    }
+    .image, .image img{
+        @apply w-[120px] h-60;
+    }
+    .row{
+        @apply flex flex-col justify-center gap-[50px];
+    }
+    .col{
+        @apply flex justify-center w-full;
+    }
+    .about-info, .contact-info{
         @apply w-full;
-      }
-  
-  }
-  
-  /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-  
-  @media only screen and (max-width: 540px){
-      .featured-name{
-          @apply text-4xl ps-0;
-      }
-
-      .project-box{
-          @apply w-full;
-      }
-      .form-inputs{
-          @apply flex-col;
-      }
-      .input-field{
-          @apply w-full;
-      }
-  }
-  
-    @media only screen and (max-width: 485px){
-        .nav-logo {
-        @apply mx-[19vw]; 
-        }
+    }
+    .project-container{
+        @apply justify-center;
+    }
+    .project-box{
+        @apply w-full;
     }
 
-    @media only screen and (max-width: 399px){
-        .nav-logo {
-        @apply mr-[50vw]; 
-        }
+    svg{
+      @apply w-full;
     }
+
+}
+
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 540px){
+    .featured-name{
+        @apply text-4xl ps-0;
+    }
+
+    .project-box{
+        @apply w-full;
+    }
+    .form-inputs{
+        @apply flex-col;
+    }
+    .input-field{
+        @apply w-full;
+    }
+}
+
+  @media only screen and (max-width: 485px){
+      .nav-logo {
+      @apply mx-[19vw]; 
+      }
+  }
+
+  @media only screen and (max-width: 399px){
+      .nav-logo {
+      @apply mr-[50vw]; 
+      }
+  }
 }
